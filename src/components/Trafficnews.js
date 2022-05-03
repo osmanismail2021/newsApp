@@ -9,7 +9,7 @@ export default function Trafficnews() {
 
   useEffect(() => {
    const fetchIt = async ()=>{
-    await fetch('https://newsapi.org/v2/everything?q=traffic&apiKey=a85abafdd40249398d40a7794a9506a1')
+    await fetch('/api/v2/everything?q=traffic&apiKey=a85abafdd40249398d40a7794a9506a1')
       .then(res => res.json())
       .then(data => {
         setArticles(data.articles)
