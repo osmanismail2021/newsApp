@@ -1,4 +1,4 @@
-import { BrowserRouter, BrowserRouter as Route, Routes } from "react-router-dom"
+import {  BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Navbar from "./components/Layout/Navbar";
 import Home from "./components/Home"
 import Footer from "./components/Layout/Footer";
@@ -37,7 +37,7 @@ export default function App() {
   }, [])
   return (
     <Database.Provider value={articles}>
-      <BrowserRouter>
+      <Router>
         
           <Navbar />
           <Routes>
@@ -52,7 +52,7 @@ export default function App() {
           </Routes>
           <Footer />
 
-      </BrowserRouter>
+      </Router>
     </Database.Provider>
 
 
