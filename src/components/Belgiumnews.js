@@ -7,7 +7,7 @@ export default function Belgiumnews() {
 
   useEffect(() => {
    const fetchIt = async ()=>{
-    await fetch('https://newsapi.org')
+    await fetch('https://newsapi.org/v2/everything?q=belgium&apiKey=a85abafdd40249398d40a7794a9506a1')
       .then(res => res.json())
       .then(data => {
         setArticles(data.articles)
