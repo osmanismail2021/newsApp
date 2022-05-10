@@ -102,23 +102,23 @@ span.lines {
 
 nav.active {
 
-background: rgb(33, 33, 188);
+background: rgb(130, 130, 134);
 
 color: white;
 
 
 }
  
-nav.active .hamburger .lines:first-child {
+nav.active .hamburger span .lines:first-child {
     background-color: rgb(249, 246, 246);
         transform: rotate(45deg);
 }
 
-nav.active .hamburger .lines:nth-child(2) {
+nav.active .hamburger span .lines:nth-child(2) {
     opacity: 0;
 }
 
-nav.active .hamburger .lines:last-child {
+nav.active .hamburger span .lines:last-child {
     background-color: white;
     transform: rotate(-45deg);
 }
