@@ -26,7 +26,7 @@ export default function Trafficnews() {
   
   
   return (
-          <div className="news">
+          <div className="news" id='trafficnews'>
      {
         articles.length !== 0 ? articles.map((news,index)=><News key={index} data={news}/>):'yok'
       }

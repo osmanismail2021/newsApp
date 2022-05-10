@@ -24,7 +24,7 @@ export default function Belgiumnews() {
   
   
   return (
-          <div className="news">
+          <div className="news" id='belgiumnews'>
      {
         articles.length !== 0 ? articles.map((news,index)=><News key={index} data={news}/>):'yok'
       }

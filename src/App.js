@@ -11,6 +11,7 @@ import Trafficnews from "./components/Trafficnews";
 import SearchPage from "./components/SearchPage";
 import { Database } from './components/context/index';
 import { React, useState, useEffect } from 'react';
+import Menu from "./components/Layout/Menu"
 
 
 
@@ -18,6 +19,7 @@ import { React, useState, useEffect } from 'react';
 export default function App() {
   
   const [articles, setArticles] = useState([])
+  const [menuOpen, setMenuOpen] = useState(false)
 
 
   useEffect(() => {
@@ -39,7 +41,8 @@ export default function App() {
     <Database.Provider value={articles}>
       <Router>
         
-          <Navbar />
+          <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+          <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/belgiumnews" element={<Belgiumnews />} />

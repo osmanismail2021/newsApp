@@ -67,3 +67,62 @@ span{
     border-radius: 6px;
     margin-right: -15px;
 }
+
+.hamburger {
+    width: 32px;
+    height: 25px;
+    color: rgb(150, 144, 144);
+    margin-right: -80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: red;
+    cursor: pointer;
+    
+
+    border: solid 2px;
+    padding: 10px;
+    border-radius: 5px;
+
+    
+}
+
+span.lines {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transform-origin: left;
+    transition: all 2s ease;
+    margin-left: 0px;
+    
+    
+}
+
+
+
+nav.active {
+
+background: rgb(33, 33, 188);
+
+color: white;
+
+
+}
+ 
+nav.active .hamburger .lines:first-child {
+    background-color: rgb(249, 246, 246);
+        transform: rotate(45deg);
+}
+
+nav.active .hamburger .lines:nth-child(2) {
+    opacity: 0;
+}
+
+nav.active .hamburger .lines:last-child {
+    background-color: white;
+    transform: rotate(-45deg);
+}
+
+    
+
+    
