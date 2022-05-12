@@ -24,36 +24,43 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
         <img className='navbar_logo' src="./images/logo_newspaper.jpg" alt="" />
       </Link>
       <div className='itemsContainer'>
-        <Link className='icon' to="/belgiumnews">
 
-          <span>Belgium News</span>
-          <GiBelgium />
 
-        </Link>
-        <Link className='icon' to="/worldnews">
+          <div className='test'>
+              <Link className='icon' to="/belgiumnews">
+                <span>Belgium News</span>
+                <GiBelgium />
+              </Link>
+          </div>
 
-          <span>World News</span>
-          <BiWorld />
-        </Link>
-        <Link className='icon' to="/weathernews">
+          <div className='test'>
+            <Link className='icon' to="/worldnews">
+              <span>World News</span>
+              <BiWorld />
+            </Link>
+          </div>
 
+        <div className='test'>    
+          <Link className='icon' to="/weathernews">
           <span>Weather News</span>
           <BsCloudSun />
+          </Link>
+        </div>
 
-        </Link>
-        <Link className='icon' to="/sportnews">
-
+        <div className='test'>    
+          <Link className='icon' to="/sportnews">
           <span>Sport News</span>
           <MdOutlineSportsSoccer />
-
-        </Link>
-        <Link className='icon' to="/trafficnews">
-
+          </Link>
+        </div>
+        
+        <div className='test'>    
+          <Link className='icon' to="/trafficnews">
           <span>Traffic News</span>
           <GiTrafficLightsReadyToGo />
-
-        </Link>
-      </div>
+          </Link>
+        </div>
+      </div>  
       <SearchBar keyword={keyword} keywordHandler={keywordHandle}  /> 
       
       <Link className='searchBar' to={`searchpage?q=${keyword}`}>

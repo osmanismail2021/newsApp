@@ -11,37 +11,44 @@ import { GiTrafficLightsReadyToGo } from "react-icons/gi"
 export default function Footer() {
   return (
     <div className='footer'>
-   <div className='itemsContainer'>
-        <Link className='icon' to="/belgiumnews">
+    <div className='itemsContainer'>
 
-          <span>Belgium News</span>
-          <GiBelgium />
 
-        </Link>
-        <Link className='icon' to="/worldnews">
+<div className='test'>
+    <Link className='icon' to="/belgiumnews">
+      <span>Belgium News</span>
+      <GiBelgium />
+    </Link>
+</div>
 
-          <span>World News</span>
-          <BiWorld />
-        </Link>
-        <Link className='icon' to="/weathernews">
+<div className='test'>
+  <Link className='icon' to="/worldnews">
+    <span>World News</span>
+    <BiWorld />
+  </Link>
+</div>
 
-          <span>Weather News</span>
-          <BsCloudSun />
+<div className='test'>    
+<Link className='icon' to="/weathernews">
+<span>Weather News</span>
+<BsCloudSun />
+</Link>
+</div>
 
-        </Link>
-        <Link className='icon' to="/sportnews">
+<div className='test'>    
+<Link className='icon' to="/sportnews">
+<span>Sport News</span>
+<MdOutlineSportsSoccer />
+</Link>
+</div>
 
-          <span>Sport News</span>
-          <MdOutlineSportsSoccer />
-
-        </Link>
-        <Link className='icon' to="/trafficnews">
-
-          <span>Traffic News</span>
-          <GiTrafficLightsReadyToGo />
-
-        </Link>
-      </div>
+<div className='test'>    
+<Link className='icon' to="/trafficnews">
+<span>Traffic News</span>
+<GiTrafficLightsReadyToGo />
+</Link>
+</div>
+</div>   
         <h1>copyright © 2022 design and developed by Osman ISMAIL</h1>
     </div>
   )
