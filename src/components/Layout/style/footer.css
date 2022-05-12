@@ -1,10 +1,32 @@
 .footer{
+    width: 100%;
+    height: 150px;
+   opacity: 0.8;
+   border: 1px solid;
+    
+    
+   
     
 }
 
+.footer .itemsContainer{
+    align-items:center;
+    justify-content:space-around;
+    margin-top: 50px;
+    
+    
+
+}
+
+
+
 h1{
-    color: brown;
+    color: rgb(144, 136, 136);
     font-size: 15px;
     text-align: center;
     font-family: 'Nunito', sans-serif;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
 }

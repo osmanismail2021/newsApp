@@ -65,24 +65,24 @@ span{
     height: 30px !important;
     border: none;
     border-radius: 6px;
-    margin-right: -15px;
+    margin-right: -25px;
 }
 
 .hamburger {
     width: 32px;
     height: 25px;
     color: rgb(150, 144, 144);
-    margin-right: -80px;
+    margin-right: -60px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: red;
+    /* background-color: red; */
     cursor: pointer;
     
 
-    border: solid 2px;
+    /* border: solid 2px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 5px; */
 
     
 }
@@ -94,6 +94,7 @@ span.lines {
     transform-origin: left;
     transition: all 2s ease;
     margin-left: 0px;
+    border-radius: 10px;
     
     
 }
