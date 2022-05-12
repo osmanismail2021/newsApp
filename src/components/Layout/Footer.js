@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { BsCloudSun } from "react-icons/bs";
 import { GiBelgium } from "react-icons/gi";
 import { BiWorld } from "react-icons/bi";
-import { BiSearchAlt } from "react-icons/bi";
 import { MdOutlineSportsSoccer } from "react-icons/md"
 import { GiTrafficLightsReadyToGo } from "react-icons/gi"
 
